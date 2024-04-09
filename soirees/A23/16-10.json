@@ -1,0 +1,242 @@
+[
+    {
+        "nom": "BOULAIE",
+        "prenom": "Alexis",
+        "argent": 12700,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "YANG",
+        "prenom": "Zhelin",
+        "argent": 12900,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "BEKKAL",
+        "prenom": "Othmane",
+        "argent": 9000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "ROMAIN",
+        "prenom": "F\u00e9lix",
+        "argent": 9000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "RIVI\u00c8RE",
+        "prenom": "Christian",
+        "argent": 9485,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "BRUNAUD",
+        "prenom": "Aristide",
+        "argent": 9610,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "LE BASTARD",
+        "prenom": "Rowan",
+        "argent": 10155,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "LAVENU",
+        "prenom": "Nathan",
+        "argent": 9185,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "ADAMCZAK",
+        "prenom": "Elias",
+        "argent": 9000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "VERROUST",
+        "prenom": "Arthur",
+        "argent": 9000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "SCHEIDLER",
+        "prenom": "Ludovic",
+        "argent": 11690,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "RENAULT",
+        "prenom": "Thimoth\u00e9e",
+        "argent": 7000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "FRAN\u00c7OIS",
+        "prenom": "Valentin",
+        "argent": 10610,
+        "points": 25,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "STOVEN",
+        "prenom": "Antoine",
+        "argent": 8640,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "EVRARD",
+        "prenom": "Thomas",
+        "argent": 7605,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "LECLERCQ",
+        "prenom": "Colomban",
+        "argent": 8000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "SOUVAY",
+        "prenom": "Martin",
+        "argent": 6315,
+        "points": 4,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "DEH\u00caTRE",
+        "prenom": "Bastien",
+        "argent": 9380,
+        "points": 6,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "COUBEL",
+        "prenom": "Yann",
+        "argent": 8415,
+        "points": 8,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "ROLDEZ",
+        "prenom": "Alexandre",
+        "argent": 10390,
+        "points": 10,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "LUCAS",
+        "prenom": "Engus",
+        "argent": 14290,
+        "points": 12,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "MACRET",
+        "prenom": "Thibaud",
+        "argent": 14800,
+        "points": 15,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "HALLEY",
+        "prenom": "Louis",
+        "argent": 13930,
+        "points": 18,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    },
+    {
+        "nom": "MERLIN",
+        "prenom": "Mathis",
+        "argent": 9000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 0,
+        "recavecesoir": 0
+    }
+]

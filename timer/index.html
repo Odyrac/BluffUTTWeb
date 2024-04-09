@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Timer Bluff'UTT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="description" value="Free poker clock and timer. Use this blind timer in your poker tournaments! Utilisez ce compteur de mise pour vos tournois de poker.">
+    <meta name="keywords" value="free,poker,timer,blind,texas hold'em">
+    <meta property="og:title" content="Free poker blind timer">
+    <meta property="og:type" content="game">
+    <meta property="og:url" content="https://freepokerclock.com">
+    <meta property="og:image" content="Poker%20Blind%20Timer%20PRO_fichiers/logo_rogner.png">
+    <meta property="og:site_name" content="Bluff'UTT Timer">
+    <meta property="og:description" content="Free poker clock and timer. Use this blind timer in your poker tournaments! Utilisez ce compteur de mise pour vos tournois de poker.">
+<!-- iconne de page .png -->
+    <link rel="shortcut icon" type="image/png" href="svg/favicon.png" />
+
+    <style>
+        #root {
+            display: none
+        }
+    </style>
+    <meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="Poker%20Blind%20Timer%20PRO_fichiers/tpt.css"><link type="text/css" rel="stylesheet" href="Poker%20Blind%20Timer%20PRO_fichiers/css.css"></head>
+
+<body class="maximizable">
+    <div id="root">
+
+        <div id="app" class="game">
+
+            <div class="wrap">
+
+                <div class="screen configure" id="parts">
+
+                    <div class="wrap">
+                        <header>
+                            <p><span class="fullname">Bluff'UTT Timer</span></p>
+                            <button id="goto-game">Fermer</button>
+                            <ul class="headers">
+                                <li>Round</li>
+                                <li>Small Blind</li>
+                                <li>Big Blind</li>
+                                <li>Ante</li>
+                                <li>Durée</li>
+                            </ul>
+                        </header>
+                        <ol id="parts_list" class="manip_list"><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="10"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="20"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="15"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="30"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="20"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="40"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="25"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="50"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="50"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="100"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="75"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="150"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="break">
+                    <ul class="inputs_wrap">
+                        <li><span data-bind="duration">10 min</span> <span data-bind="type">break</span></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="100"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="200"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="150"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="300"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="200"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="400"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="300"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="600"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="400"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="800"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="500"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="1000"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="break">
+                    <ul class="inputs_wrap">
+                        <li><span data-bind="duration">10 min</span> <span data-bind="type">break</span></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="600"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="1200"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="800"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="1600"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li><li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small" value="1000"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big" value="2000"></li>
+                        <li><input type="text" name="ante" value="-"></li>
+                        <li><input type="text" name="duration" value="10 min"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li></ol>
+                        <ol class="configure_actions">
+                            <li>
+                                <button href="#add_part" class="button add_part">Add new level</button>
+                                <button href="#add_break" class="button add_break">Add break</button>
+                            </li>
+                        </ol>
+                    </div>
+
+                </div>
+
+                <div class="screen configure" id="rules">
+
+                    <div class="wrap">
+
+                        <div class="transbox bordered main">
+                            <header>
+                                <p><span class="fullname">Money &amp; Chips</span></p>
+                            </header>
+                            <ul id="rules_config">
+                                <li>
+                                    <ul>
+                                        <li>Number of entrants</li>
+                                        <li><span data-bind="entrants" class="input-placeholder">6</span></li>
+                                        <li>Currency:</li>
+                                        <li>
+                                            <label class="currency-wrap">
+                                                <select name="currency">
+                                                    <option value="$" selected="selected">$ USD</option>
+                                                    <option value="£">£ GBP</option>
+                                                    <option value="€">€ Euro</option>
+                                                </select>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>buying in at</li>
+                                        <li><input type="text" name="buy_in" value="$50"></li>
+                                        <li>Total prize pool:</li>
+                                        <li><span data-bind="total_money">$300</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>Starting chips stack</li>
+                                        <li><input type="text" name="starting_chips" value="1,000"></li>
+                                        <li>Total chips on the table:</li>
+                                        <li><span data-bind="total_chips">6,000</span></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>Re-buy cost</li>
+                                        <li><input type="text" name="re_buy_money" value="$50"></li>
+                                        <li>for</li>
+                                        <li><input type="text" name="re_buy_chips" value="1,000"></li>
+                                        <li>chips</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>Add-on cost</li>
+                                        <li><input type="text" name="add_on_money" value="$50"></li>
+                                        <li>for</li>
+                                        <li><input type="text" name="add_on_chips" value="1,000"></li>
+                                        <li>chips</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="process_actions"><button id="goto_prizes">Continue</button></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="screen configure" id="prizes">
+
+                    <div class="wrap">
+
+                        <div class="transbox bordered main">
+                            <header>
+                                <p><span class="fullname">Prize Payouts</span></p>
+                                <p class="instr">Split up the percentage of prize money you want entrants to receive.
+                                </p>
+                            </header>
+
+                            <ol id="prize_list" class="manip_list"><li class="prize transition-bg-change">
+                    <ul class="inputs_wrap">
+                        <li><input type="text" name="percent" value="55%"></li>
+                        <li data-bind="prize_money">$165</li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#delete" class="delete">Delete</a></li>
+                    </ul>
+                </li><li class="prize transition-bg-change">
+                    <ul class="inputs_wrap">
+                        <li><input type="text" name="percent" value="20%"></li>
+                        <li data-bind="prize_money">$60</li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#delete" class="delete">Delete</a></li>
+                    </ul>
+                </li><li class="prize transition-bg-change">
+                    <ul class="inputs_wrap">
+                        <li><input type="text" name="percent" value="15%"></li>
+                        <li data-bind="prize_money">$45</li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#delete" class="delete">Delete</a></li>
+                    </ul>
+                </li><li class="prize transition-bg-change">
+                    <ul class="inputs_wrap">
+                        <li><input type="text" name="percent" value="7%"></li>
+                        <li data-bind="prize_money">$21</li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#delete" class="delete">Delete</a></li>
+                    </ul>
+                </li><li class="prize transition-bg-change">
+                    <ul class="inputs_wrap">
+                        <li><input type="text" name="percent" value="3%"></li>
+                        <li data-bind="prize_money">$9</li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#delete" class="delete">Delete</a></li>
+                    </ul>
+                </li></ol>
+                            <ol class="configure_actions">
+                                <li>
+                                    <a href="#add_prize" class="add_prize flush_left">Add prize</a>
+                                </li>
+                            </ol>
+                            <div class="process_actions"><button id="goto_game">Play Poker</button></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="screen" id="game">
+
+                    <div class="wrap">
+
+                        <div class="pane" id="left_sect">
+
+                            <div class="row" id="game_level">
+                                <span class="fpc">Bluff'UTT Timer</span>
+                                <span data-bind="level">Round 1</span>
+                                <button id="goto-parts">Options</button>
+                            </div>
+
+                            <div class="pane" id="topl_sect">
+
+                                <div class="row" id="timer">
+                                    <header>Temps restant</header>
+                                    <span id="time">10:00</span>
+                                </div>
+
+                                <div class="row" id="progress_wrap">
+                                    <div id="progress-gutter" style="">
+                                        <div id="progress-bar" style="width: 0px;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row" id="ante_blinds">
+                                    <div id="blinds-wrap">
+                                        <header>Blinds</header>
+                                        <span id="game_blinds">10/20</span>
+                                        <span id="blinds-next" class="next-info"></span>
+                                    </div>
+                                    <div id="progress-actions">
+                                        <button id="play"></button>
+                                        <button id="stop"></button>
+                                    </div>
+                                    <div id="ante-wrap">
+                                        <header>Ante</header>
+                                        <span id="game_ante">0</span>
+                                        <span id="ante-next" class="next-info"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="screen" id="aftermatch">
+
+                    <div class="wrap">
+
+                        <div class="transbox bordered main">
+                            <header>
+                                CONGRATULATIONS WE HAVE A WINNER!
+                            </header>
+                            <span class="before"></span>
+                            <span class="after"></span>
+
+                            <ol id="winners_list">
+                            </ol>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="common above">
+                </div>
+
+                <div class="common below">
+                
+                        
+                      <!-- une banniere flex centrée avec une image et un texte à sa droite -->
+                        <div class="banner-wrap" style="display: flex; flex-direction: row; align-items: center; justify-content: center; height: 100%;">
+                            <img src="svg/thepokertimer.png" alt="Bluff'UTT" style="width: 75px; height: 75px;">
+                            <h1 style="margin-left: 10px; margin-right: 10px;">Tournoi PokerChief Bluff'UTT</h1>
+                            <img src="svg/thepokertimer.png" alt="Bluff'UTT" style="width: 75px; height: 75px;">
+                        </div>
+                    </div>
+           
+
+            </div>
+
+        </div>
+
+        <div id="ads" class="hidden bg-box">
+            <div id="ad_fbanner">
+                <div class="ad">
+                </div>
+            </div>
+        </div>
+
+        <div id="chrome_overlay">
+
+            <div class="message modal">
+                <div class="ui">
+                    <a href="#close" class="close"></a>
+                </div>
+                <div class="contents">
+                    <header data-bind="title"></header>
+                    <p data-bind="text"></p>
+                    <div class="main"></div>
+                    <div class="actions">
+                        <a href="#cancel" class="cancel flush_left">cancel</a>
+                        <button class="flush_right" data-bind="button">OK</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message notification">
+                <div class="ui">
+                    <a href="#close" class="close"></a>
+                </div>
+                <div class="contents">
+                    <header data-bind="title"></header>
+                    <p data-bind="text"></p>
+                    <div class="main"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="templates" class="hidden">
+
+            <!--presets row-->
+            <ol class="static">
+                <li class="preset">
+                    <ul class="name_summary">
+                        <li data-bind="name"></li>
+                        <li data-bind="desc" class="part_desc"></li>
+                    </ul>
+                    <ul class="actions">
+                        <li><input type="radio" name="presets_tournament"><label class="radio"></label></li>
+                    </ul>
+                </li>
+
+                <li class="round">
+                    <ul>
+                        <li data-bind="type"></li>
+                        <li data-bind="blinds_small"></li>
+                        <li data-bind="blinds_big"></li>
+                        <li data-bind="ante"></li>
+                        <li data-bind="duration"></li>
+                    </ul>
+                </li>
+
+                <li class="break">
+                    <ul>
+                        <li data-bind="type"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li data-bind="duration"></li>
+                    </ul>
+                </li>
+
+                <li class="addon_break">
+                    <ul>
+                        <li data-bind="type"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li data-bind="duration"></li>
+                    </ul>
+                </li>
+
+                <li class="player">
+                    <ul>
+                        <li data-bind="name"></li>
+                        <li data-bind="prize" class="prize"></li>
+                        <li class="action"></li>
+                    </ul>
+                </li>
+
+            </ol>
+
+            <ol class="configure">
+                <li class="round">
+                    <ul class="inputs_wrap">
+                        <li><input type="number" min="0" max="100000" name="blinds_small"></li>
+                        <li><input type="number" min="0" max="100000" name="blinds_big"></li>
+                        <li><input type="text" name="ante"></li>
+                        <li><input type="text" name="duration"></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="break">
+                    <ul class="inputs_wrap">
+                        <li><span data-bind="duration"></span> <span data-bind="type"></span></li>
+                        <li class="actions">
+                            <button class="delete"></button>
+                        </li>
+                    </ul>
+                </li>
+                <li class="prize">
+                    <ul class="inputs_wrap">
+                        <li><input type="text" name="percent"></li>
+                        <li data-bind="prize_money"></li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#delete" class="delete">Delete</a></li>
+                    </ul>
+                </li>
+                <li class="player">
+                    <ul class="inputs_wrap">
+                        <li><input type="text" name="name"></li>
+                    </ul>
+                    <ul class="actions">
+                        <li><a href="#delete" class="delete">Delete</a></li>
+                    </ul>
+                </li>
+            </ol>
+
+            <form class="add-player-form">
+                <label><span>Name</span><input name="player_name"></label>
+                <label><span>Buy-in</span><input name="buy_in"></label><br>
+                <label><span>Chips</span><input name="chips"></label>
+            </form>
+
+        </div>
+
+    </div>
+
+    <script async="" src="Poker%20Blind%20Timer%20PRO_fichiers/analytics.js"></script><script>
+        setTimeout(function () {
+            var style = document.createElement("link")
+            style.setAttribute("type", "text/css")
+            style.setAttribute("rel", "stylesheet")
+            style.setAttribute("href", "css/tpt.css")
+            document.head.appendChild(style)
+
+            var fontStyle = document.createElement("link")
+            fontStyle.setAttribute("type", "text/css")
+            fontStyle.setAttribute("rel", "stylesheet")
+            fontStyle.setAttribute("href", "https://fonts.googleapis.com/css?family=Muli:400,300")
+            document.head.appendChild(fontStyle)
+        })
+    </script>
+    <script src="Poker%20Blind%20Timer%20PRO_fichiers/main.js" async=""></script>
+
+    <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-16000707-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
+</body></html>
