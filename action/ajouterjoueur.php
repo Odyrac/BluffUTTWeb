@@ -16,10 +16,12 @@ $prenom = ucfirst(strtolower($prenom));
 $argent = 10000;
 $ensoiree = "false";
 $nbpresence = 0;
+$derniergain = 0;
 if (isset($_POST['checkbox'])) {
     $argent = 9000;
     $ensoiree = "true";
     $nbpresence = 1;
+    $derniergain = -1000;
 }
 
 //on récupère le contenu de joueurs.json
@@ -48,7 +50,7 @@ if ($alreadyexist) {
         'prenom' => $prenom,
         'argent' => $argent,
         'points' => 0,
-        'derniergain' => 0,
+        'derniergain' => $derniergain,
         'ensoiree' => $ensoiree,
         'nbpresence' => $nbpresence,
         'recavecesoir' => 0
