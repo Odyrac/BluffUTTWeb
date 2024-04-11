@@ -139,7 +139,7 @@
                             </th>
 
 
-                            <th class="border-bottom-0">
+                            <th class="border-bottom-0 ordi-nopaddingright">
                               <h6 class="fw-semibold mb-0">Points</h6>
                             </th>
                             <th class="border-bottom-0 ordi-affichage">
@@ -216,7 +216,7 @@
                                 </td>
 
 
-                                <td class="border-bottom-0">
+                                <td class="border-bottom-0 ordi-nopaddingright">
                                   <div class="d-flex align-items-center gap-2">
                                     <span class="badge bg-<?php echo $color; ?> rounded-3 fw-semibold"><?php echo $joueur['points']; ?></span>
                                   </div>
@@ -269,6 +269,15 @@
       let largeur = window.innerWidth;
 
       if (largeur <= 500) {
+        // patch scrollbar horizontal
+        let points = document.getElementsByClassName('ordi-nopaddingright');
+        let pointsArray = Array.from(points);
+        pointsArray.forEach(element => {
+          element.style.paddingRight = '0px';
+        });
+
+
+
         let argent = document.getElementsByClassName('mobile-affichage');
         let argentArray = Array.from(argent);
         argentArray.forEach(element => {
@@ -281,6 +290,15 @@
           element.style.display = 'none';
         });
       } else {
+        let points = document.getElementsByClassName('ordi-nopaddingright');
+        let pointsArray = Array.from(points);
+        pointsArray.forEach(element => {
+          //on remet la valeur par défaut
+          element.style.paddingRight = '16px';
+        });
+
+        
+
         let argent = document.getElementsByClassName('mobile-affichage');
         let argentArray = Array.from(argent);
         argentArray.forEach(element => {
