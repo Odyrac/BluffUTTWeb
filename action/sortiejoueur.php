@@ -17,7 +17,11 @@ foreach ($_POST as $key => $value) {
         $value = intval($value);
         // Parcourez les joueurs pour trouver le joueur correspondant
         foreach ($joueurs as &$joueur) {
-            if ($joueur['prenom'] . $joueur['nom'] == $key) {
+            //si le joueur a un espace dans son nom ou prénom, on le remplace par _ pour éviter les erreurs
+            $valPrenom = str_replace(' ', '_', $joueur['prenom']);
+            $valNom = str_replace(' ', '_', $joueur['nom']);
+
+            if ($valPrenom . '||||' . $valNom == $key) {
                 if ($joueur['ensoiree'] == "true" && $joueur['arenducesoir'] != "true") {
                     $joueur['argent'] += $value;
                     $joueur['arenducesoir'] = "true";

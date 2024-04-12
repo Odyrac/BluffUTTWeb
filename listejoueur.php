@@ -175,8 +175,7 @@
                                                             <?php
 
                                                             if (isset($_GET['for']) && $_GET['for'] == 'sortiejoueur') {
-
-                                                                echo '<input class="form-control" type="number" name="' . $joueur['prenom'] . $joueur['nom'] . '">';
+                                                                echo '<input class="form-control" type="number" name="' . $joueur['prenom'] . '||||' . $joueur['nom'] . '" placeholder="Jetons rendus">';
                                                             }
 
                                                             if (isset($_GET['for']) && $_GET['for'] == 'entrerjoueur') {

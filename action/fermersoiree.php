@@ -32,12 +32,21 @@ if ($allfalse) {
 
 function compareDernierGain($a, $b)
 {
-    if ($a['derniergain'] == $b['derniergain']) {
-        // Si les derniers gains sont égaux, on compare par le montant d'argent
-        return $b['argent'] - $a['argent'];
+    // on ne trie que les joueurs qui ont ensoiree = true
+    if ($a['ensoiree'] == "true" && $b['ensoiree'] == "true") {
+        if ($a['derniergain'] == $b['derniergain']) {
+            // Si les derniers gains sont égaux, on compare par le montant d'argent
+            return $b['argent'] - $a['argent'];
+        }
+        // Sinon, on compare par les derniers gains
+        return $b['derniergain'] - $a['derniergain'];
+    } else if ($a['ensoiree'] == "true") {
+        return -1;
+    } else if ($b['ensoiree'] == "true") {
+        return 1;
+    } else {
+        return 0;
     }
-    // Sinon, on compare par les derniers gains
-    return $b['derniergain'] - $a['derniergain'];
 }
 
 
@@ -96,7 +105,7 @@ foreach ($joueurs as &$joueur) {
     $joueur['arenducesoir'] = "false";
 }
 
-$json_data = json_encode($joueurs);
+$json_data = json_encode($joueurs, JSON_PRETTY_PRINT);
 file_put_contents('../bdd/joueurs.json', $json_data);
 
 // On créé un fichier json dans ../soirees/ pour stocker les infos de la soirée fermée (utilisé pour les stats)
