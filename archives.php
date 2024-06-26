@@ -249,6 +249,136 @@
               </div>
             </div>
 
+
+
+
+
+
+            <div class="card">
+              <div class="" id="headingTwo">
+                <button class="btn btn-link card-header w-100 text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h5 class="mb-0 card-title fw-semibold text-start">Classement soirées P24
+                  </h5>
+                </button>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  <div class="card-body" style="padding: 0px!important;">
+                    <div class="table-responsive">
+                      <table class="table text-nowrap mb-0 align-middle">
+                        <thead class="text-dark fs-4">
+                          <tr>
+                            <th class="border-bottom-0 m-0" style="padding-right: 0px; padding-left: 0px;">
+                              <h6 class="fw-semibold mb-0">Place</h6>
+                            </th>
+
+                            <th class="border-bottom-0">
+                              <h6 class="fw-semibold mb-0">Joueur</h6>
+                            </th>
+
+
+                            <th class="border-bottom-0 ordi-nopaddingright">
+                              <h6 class="fw-semibold mb-0">Points</h6>
+                            </th>
+                            <th class="border-bottom-0 ordi-affichage">
+                              <h6 class="fw-semibold mb-0">Argent</h6>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <?php
+                          $json_data = file_get_contents('./soirees/P24/P24_GLOBAL.json');
+                          $joueurs = json_decode($json_data, true);
+
+                          // Fonction de comparaison pour trier les joueurs par points décroissants, puis par argent décroissant
+                         
+                          if ($joueurs) {
+                            // Triez les joueurs en utilisant la nouvelle fonction de comparaison
+                            usort($joueurs, 'comparePointsAndArgent');
+
+                            $color = "primary";
+                            $indice = 1;
+
+                            foreach ($joueurs as $joueur) {
+                              if ($indice == 1) {
+                                $color = "first";
+                              } else if ($indice == 2) {
+                                $color = "second";
+                              } else if ($indice == 3) {
+                                $color = "danger";
+                              } else {
+                                $color = "primary";
+                              }
+                              $indice++;
+
+
+                          ?>
+                              <tr <?php if ($joueur['ensoiree'] == 'true') {
+                                    echo 'class="bg-success"';
+                                  }
+
+
+                                  ?>>
+                                <td class="border-bottom-0 m-0" style="padding-right: 0px; padding-left: 0px;">
+                                  <h6 class="fw-semibold mb-0"><?php echo $indice - 1; ?></h6>
+                                </td>
+
+                                <?php
+
+
+                                $argent = $joueur['argent'];
+                                if ($argent >= 1000) {
+                                  $argent = number_format($argent, 0, ',', ',');
+                                }
+
+
+                                ?>
+                                <td class="border-bottom-0">
+                                  <h6 class="fw-semibold mb-0"><?php echo $joueur['nom'] . ' ' . $joueur['prenom']; ?></h6>
+
+                                  <span class="fw-normal mobile-affichage" style="display: none;"><?php echo $argent; ?>$</span>
+
+
+                                </td>
+
+
+                                <td class="border-bottom-0 ordi-nopaddingright">
+                                  <div class="d-flex align-items-center gap-2">
+                                    <span class="badge bg-<?php echo $color; ?> rounded-3 fw-semibold"><?php echo $joueur['points']; ?></span>
+                                  </div>
+                                </td>
+
+                                <td class="border-bottom-0 ordi-affichage">
+                                  <p class="mb-0 fw-normal"><?php echo $argent; ?>$</p>
+                                </td>
+                              </tr>
+                          <?php
+                            }
+                          } else {
+                            echo "<tr><td colspan='4'>Aucun joueur trouvé.</td></tr>";
+                          }
+                          ?>
+
+
+
+
+
+
+
+                        </tbody>
+                      </table>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
           </div>
         </div>
       </div>

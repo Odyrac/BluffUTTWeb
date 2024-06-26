@@ -1,0 +1,222 @@
+[
+    {
+        "nom": "HALLEY",
+        "prenom": "Louis",
+        "argent": 14405,
+        "points": 101,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 6,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "VERNET",
+        "prenom": "William",
+        "argent": 10300,
+        "points": 59,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 6,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "GRANDJEAN",
+        "prenom": "Kyoma",
+        "argent": 9700,
+        "points": 15,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 2,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "LEDDA",
+        "prenom": "Romain",
+        "argent": 10690,
+        "points": 22,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 2,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "DUGAVE",
+        "prenom": "Th\u00e9o",
+        "argent": 6465,
+        "points": 31,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 6,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "VERY",
+        "prenom": "Rapha\u00ebl",
+        "argent": 10795,
+        "points": 20,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 2,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "COUBEL",
+        "prenom": "Yann",
+        "argent": 16540,
+        "points": 79,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 6,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "MEUNIER",
+        "prenom": "Axel",
+        "argent": 7075,
+        "points": 29,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 6,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "DEH\u00eaTRE",
+        "prenom": "Bastien",
+        "argent": 6860,
+        "points": 38,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 6,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "SOUVAY",
+        "prenom": "Martin",
+        "argent": 11595,
+        "points": 25,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 1,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "LAVENU",
+        "prenom": "Nathan",
+        "argent": 9345,
+        "points": 2,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 1,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "FRITIG",
+        "prenom": "Lucie",
+        "argent": 10270,
+        "points": 12,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 1,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "ZHANG",
+        "prenom": "Qingyang",
+        "argent": 13490,
+        "points": 32,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 3,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "BAZIN",
+        "prenom": "Louise",
+        "argent": 9000,
+        "points": 0,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 1,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "HAO",
+        "prenom": "Zhou",
+        "argent": 11435,
+        "points": 25,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 1,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "BOULAIE",
+        "prenom": "Alexis",
+        "argent": 3300,
+        "points": 8,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 4,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "YANG",
+        "prenom": "Zhelin",
+        "argent": 8300,
+        "points": 8,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 2,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "LUCAT",
+        "prenom": "Engus",
+        "argent": 9845,
+        "points": 28,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 3,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "GUERIN",
+        "prenom": "Nathan",
+        "argent": 9935,
+        "points": 8,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 1,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    },
+    {
+        "nom": "BALAYN",
+        "prenom": "Leeloo",
+        "argent": 10600,
+        "points": 25,
+        "derniergain": 0,
+        "ensoiree": "false",
+        "nbpresence": 3,
+        "recavecesoir": 0,
+        "arenducesoir": "false"
+    }
+]
